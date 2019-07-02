@@ -15,13 +15,7 @@
     <!--@mbg.generated-->
     id, username, `password`, phone, email, created, updated
   </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
-    <!--@mbg.generated-->
-    select 
-    <include refid="Base_Column_List" />
-    from tb_user
-    where id = #{id,jdbcType=BIGINT}
-  </select>
+
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     <!--@mbg.generated-->
     delete from tb_user

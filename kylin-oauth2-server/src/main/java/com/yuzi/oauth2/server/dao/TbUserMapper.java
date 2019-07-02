@@ -9,7 +9,6 @@ public interface TbUserMapper {
 
     int insertSelective(TbUser record);
 
-    TbUser selectByPrimaryKey(Long id);
 
     int updateByPrimaryKeySelective(TbUser record);
 
