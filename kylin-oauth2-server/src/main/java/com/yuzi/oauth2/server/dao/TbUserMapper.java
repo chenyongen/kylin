@@ -1,16 +1,7 @@
 package com.yuzi.oauth2.server.dao;
 
 import com.yuzi.oauth2.server.domain.TbUser;
+import com.yuzi.oauth2.server.utils.MyMapper;
 
-public interface TbUserMapper {
-    int deleteByPrimaryKey(Long id);
-
-    int insert(TbUser record);
-
-    int insertSelective(TbUser record);
-
-
-    int updateByPrimaryKeySelective(TbUser record);
-
-    int updateByPrimaryKey(TbUser record);
+public interface TbUserMapper extends MyMapper<TbUser> {
 }
