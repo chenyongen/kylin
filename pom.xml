@@ -18,6 +18,7 @@
     <modules>
         <module>kylin-dependency</module>
         <module>kylin-oauth2-server</module>
+        <module>kylin-oauth2-mirror</module>
     </modules>
 
     <properties>

@@ -18,7 +18,7 @@ public class TbUserServiceImpl implements TbUserService{
     public TbUser getByUserName(String username) {
         Example example = new Example(TbUser.class);
         example.createCriteria().andEqualTo("username",username);
-        return tbUserMapper.selectOneByExample(username) ;
+        return tbUserMapper.selectOneByExample(example) ;
     }
 
 }
