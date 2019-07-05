@@ -19,6 +19,7 @@ public class ResourceServerConfiguration extends ResourceServerConfigurerAdapter
                .antMatchers("/ok").hasAnyAuthority("SystemContent")
                .antMatchers("/view/**").hasAnyAuthority("SystemContentView")
 
+
                 ;
     }
 
